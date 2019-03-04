@@ -16,7 +16,7 @@ CONFIG_NAME = ENV['CONFIG_NAME'] || 'single'
 
 CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), "../../config/#{CONFIG_NAME}.config.yml")))
 CONFIG['user'] = ENV['LT_USERNAME'] || CONFIG['user']
-CONFIG['key'] = ENV['LT_APIKEY'] || CONFIG['key']
+CONFIG['key'] = ENV['LT_ACCESS_KEY'] || CONFIG['key']
 
 
 Capybara.register_driver :lambdatest do |app|
