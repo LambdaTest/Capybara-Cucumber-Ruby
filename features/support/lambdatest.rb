@@ -23,12 +23,25 @@ Capybara.register_driver :lambdatest do |app|
   @caps = CONFIG['common_caps'].merge(CONFIG['browser_caps'][TASK_ID])
 
   
+if (CONFIG_NAME=='singleJenkins')
+lt_browser = ENV['LT_BROWSER']	
+lt_os = ENV['LT_OPERATING_SYSTEM']
+lt_browser_version = ENV['LT_BROWSER_VERSION']
+lt_res = ENV['LT_RESOLUTION']
 
+(Capybara::Selenium::Driver.new(app,
+	    :browser => :remote,
+	    :url => "http://#{CONFIG['user']}:#{CONFIG['key']}@#{CONFIG['server']}/wd/hub",
+	    :desired_capabilities => @caps
+	  ))
+
+else (
+puts @caps
   Capybara::Selenium::Driver.new(app,
     :browser => :remote,
     :url => "http://#{CONFIG['user']}:#{CONFIG['key']}@#{CONFIG['server']}/wd/hub",
     :desired_capabilities => @caps
-  )
+  ))
 end
 
 Capybara.default_driver = :lambdatest

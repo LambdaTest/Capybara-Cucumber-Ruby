@@ -3,7 +3,7 @@ server: "hub.lambdatest.com"
 
 common_caps:
   "build": "capybara-lambdatest"
-  "name": "single-Test"
+  "name": "single-Test-Jenkins"
 
 browser_caps:
   -
