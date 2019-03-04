@@ -24,8 +24,8 @@ Capybara.register_driver :lambdatest do |app|
 
 puts CONFIG_NAME
 if (CONFIG_NAME=='jenkins')
-lt_browser = ENV['LT_BROWSER']	
-lt_os = ENV['LT_OPERATING_SYSTEM']
+lt_browser = ENV['LT_BROWSER_NAME']	
+lt_os = ENV['LT_PLATFORM']
 lt_browser_version = ENV['LT_BROWSER_VERSION']
 lt_res = ENV['LT_RESOLUTION']
 @caps={"browserName"=>lt_browser, "version"=>lt_browser_version, "platform"=>lt_os, "resolution"=>lt_res}
