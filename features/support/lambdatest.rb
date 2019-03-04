@@ -31,7 +31,7 @@ lt_browser_version = ENV['LT_BROWSER_VERSION']
 lt_res = ENV['LT_RESOLUTION']
 @caps={"browserName"=>lt_browser, "version"=>lt_browser_version, "platform"=>lt_os, "resolution"=>lt_res, "build"=>"capybara-lambdatest", "name"=>"single-Test-Jenkins","video"=>true, "network"=>true, "console"=>true, "visual"=>true }
 
-Capybara::Selenium::Driver.new(
+Capybara::Selenium::Driver.new(app,
 	    :browser => :remote,
 	    :url => ENV['LT_GRID_URL'],
 	    :desired_capabilities => @caps
