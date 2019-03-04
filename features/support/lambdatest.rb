@@ -32,7 +32,7 @@ lt_res = ENV['LT_RESOLUTION']
 
 Capybara::Selenium::Driver.new(app,
 	    :browser => :remote,
-	    :url => "https://#{CONFIG['user']}:#{CONFIG['key']}@#{CONFIG['server']}/wd/hub",
+	    :url => ENV['LT_GRID_URL'],
 	    :desired_capabilities => @caps
 	  )
 
