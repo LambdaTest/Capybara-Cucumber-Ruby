@@ -26,9 +26,8 @@ task :parallel do |t, args|
   end
 end
 
-Cucumber::Rake::Task.new(:singleJenkins) do |task|
-  ENV['CONFIG_NAME'] ||= "singleJenkins"
-  task.cucumber_opts = ['--format=pretty', 'features/single.feature']
+Cucumber::Rake::Task.new(:jenkins) do |task|
+  task.cucumber_opts = ['--format=pretty', 'features/single.feature', 'CONFIG_NAME=jenkins']
 end
 
 

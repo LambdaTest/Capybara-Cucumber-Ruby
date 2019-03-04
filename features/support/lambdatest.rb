@@ -23,7 +23,7 @@ Capybara.register_driver :lambdatest do |app|
   @caps = CONFIG['common_caps'].merge(CONFIG['browser_caps'][TASK_ID])
 
 puts CONFIG_NAME
-if (CONFIG_NAME=='singleJenkins')
+if (CONFIG_NAME=='jenkins')
 lt_browser = ENV['LT_BROWSER']	
 lt_os = ENV['LT_OPERATING_SYSTEM']
 lt_browser_version = ENV['LT_BROWSER_VERSION']
