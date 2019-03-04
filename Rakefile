@@ -26,6 +26,11 @@ task :parallel do |t, args|
   end
 end
 
+Cucumber::Rake::Task.new(:singleJenkins) do |task|
+  ENV['CONFIG_NAME'] ||= "singleJenkins"
+  task.cucumber_opts = ['--format=pretty', 'features/single.feature']
+end
+
 
 task :test do |t, args|
   Rake::Task["single"].invoke
