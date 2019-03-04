@@ -29,16 +29,17 @@ lt_os = ENV['LT_OPERATING_SYSTEM']
 lt_browser_version = ENV['LT_BROWSER_VERSION']
 lt_res = ENV['LT_RESOLUTION']
 @caps={"browserName"=>lt_browser, "version"=>lt_browser_version, "platform"=>lt_os, "resolution"=>lt_res}
+puts @caps
 Capybara::Selenium::Driver.new(app,
 	    :browser => :remote,
-	    :url => "http://#{CONFIG['user']}:#{CONFIG['key']}@#{CONFIG['server']}/wd/hub",
+	    :url => "https://#{CONFIG['user']}:#{CONFIG['key']}@#{CONFIG['server']}/wd/hub",
 	    :desired_capabilities => @caps
 	  )
 
 else 
   Capybara::Selenium::Driver.new(app,
     :browser => :remote,
-    :url => "http://#{CONFIG['user']}:#{CONFIG['key']}@#{CONFIG['server']}/wd/hub",
+    :url => "https://#{CONFIG['user']}:#{CONFIG['key']}@#{CONFIG['server']}/wd/hub",
     :desired_capabilities => @caps
   )
 end
