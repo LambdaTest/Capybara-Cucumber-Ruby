@@ -1,0 +1,19 @@
+language: ruby
+rvm:
+  - 2.2
+  - jruby
+  - truffleruby
+  - 2.0.0-p247
+  
+before_install:
+  - gem update --system
+  - gem install bundler
+
+env:
+  global:
+    - LT_USERNAME=deepakm
+    - LT_ACCESS_KEY=gIUJGTZtydrnSbdGro6Hm0yOJDfFBJWGZQ8FdyPA1rv07ZxxQA
+    
+script:
+  - bundle install
+  - bundle exec rake single
