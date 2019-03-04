@@ -1,0 +1,12 @@
+server: "hub.lambdatest.com"
+user: "<YOUR LAMBDATEST USERNAME>"
+key: "<YOUR LAMBDATEST KEY>"
+
+common_caps:
+  "build": "capybara-lambdatest"
+  "browserstack.debug": true
+
+browser_caps:
+  -
+    "browser": "chrome"
+    "tunnel": true

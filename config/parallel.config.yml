@@ -1,0 +1,41 @@
+server: "hub.lambdatest.com"
+user: "<YOUR LAMBDATEST USERNAME>"
+key: "<YOUR LAMBDATEST KEY>"
+
+common_caps:
+  "build": "capybara-lambdatest"
+  "name": "parallel-Test"
+
+browser_caps:
+  -
+    "browser": "chrome"
+    "version": "64.0"
+    "platform": "Windows 7"
+    "video": true
+    "network": true
+    "console": true
+    "visual": true
+  -
+    "browser": "firefox"
+    "version": "19.0"
+    "platform": "Windows 8.1"
+    "video": true
+    "network": true
+    "console": true
+    "visual": true
+  -
+    "browser": "internet explorer"
+    "version": "11.0"
+    "platform": "Windows 11"
+    "video": true
+    "network": true
+    "console": true
+    "visual": true
+  -
+    "browser": "safari"
+    "version": "11.0"
+    "platform": "macOS High Sierra"
+    "video": true
+    "network": true
+    "console": true
+    "visual": true
