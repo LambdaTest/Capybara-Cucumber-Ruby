@@ -11,8 +11,8 @@ before_install:
 
 env:
   global:
-    - LT_USERNAME=deepakm
-    - LT_ACCESS_KEY=gIUJGTZtydrnSbdGro6Hm0yOJDfFBJWGZQ8FdyPA1rv07ZxxQA
+    - LT_USERNAME=your username
+    - LT_ACCESS_KEY=your access key
     
 script:
   - bundle install
