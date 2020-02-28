@@ -1,4 +1,4 @@
-# Capybara-Selenium-Sample
+# Capybara Selenium Sample
 ![LambdaTest Logo](https://www.lambdatest.com/static/images/logo.svg)
 
 ### Environment Setup
