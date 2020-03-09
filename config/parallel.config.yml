@@ -12,30 +12,30 @@ browser_caps:
     "version": "64.0"
     "platform": "Windows 7"
     "video": true
-    "network": true
-    "console": true
-    "visual": true
+    "network": false
+    "console": false
+    "visual": false
   -
     "browser": "firefox"
     "version": "19.0"
     "platform": "Windows 8.1"
     "video": true
-    "network": true
-    "console": true
-    "visual": true
+    "network": false
+    "console": false
+    "visual": false
   -
     "browser": "internet explorer"
     "version": "11.0"
     "platform": "Windows 11"
     "video": true
-    "network": true
-    "console": true
-    "visual": true
+    "network": false
+    "console": false
+    "visual": false
   -
     "browser": "safari"
     "version": "11.0"
     "platform": "macOS High Sierra"
     "video": true
-    "network": true
-    "console": true
-    "visual": true
+    "network": false
+    "console": false
+    "visual": false
