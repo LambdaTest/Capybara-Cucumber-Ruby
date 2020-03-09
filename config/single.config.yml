@@ -12,6 +12,6 @@ browser_caps:
     "version": "64.0"
     "platform": "Windows 7"
     "video": true
-    "network": true
-    "console": true
-    "visual": true
+    "network": false
+    "console": false
+    "visual": false
