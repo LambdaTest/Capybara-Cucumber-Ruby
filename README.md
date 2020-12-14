@@ -10,7 +10,7 @@
      Download RVM and install Ruby: curl -L https://get.rvm.io | bash -s stable --ruby
      
 ## Lambdatest Credentials
-   * Set LambdaTest username and access key in environment variables. It can be obtained from [LambdaTest dashboard]   (https://automation.lambdatest.com/)     
+   * Set LambdaTest username and access key in environment variables. It can be obtained from [LambdaTest dashboard](https://automation.lambdatest.com/)     
    
    example:
  * For linux/mac    
