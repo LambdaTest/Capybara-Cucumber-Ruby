@@ -9,9 +9,5 @@ common_caps:
 browser_caps:
   -
     "browserName": "chrome"
-    "version": "64.0"
+    "version": "latest"
     "platform": "Windows 7"
-    "video": true
-    "network": false
-    "console": false
-    "visual": false
