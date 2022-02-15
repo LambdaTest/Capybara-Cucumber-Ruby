@@ -14,5 +14,5 @@ end
  
 Then /^I should see new item in list "([^\"]*)"$/ do |keys|
   expect(page).to have_content(keys)
-  page.evaluate_script('lambda-status=Passed');
+  page.execute_script('lambda-status=Passed');
 end
