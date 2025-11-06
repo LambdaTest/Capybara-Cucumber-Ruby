@@ -10,4 +10,4 @@ browser_caps:
   -
     "browserName": "chrome"
     "version": "latest"
-    "platform": "Windows 7"
+    "platform": "Windows 11"
