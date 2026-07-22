@@ -1,7 +1,7 @@
 Feature: Add to Todo list functionality
 
 Background:
-  Given I am on https://lambdatest.github.io/sample-todo-app/
+  Given I am on https://www.testmuai.com/selenium-playground/todo-app/
 
 Scenario: Add Todo List
     When I click on first item
