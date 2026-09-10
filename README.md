@@ -13,7 +13,7 @@
 With TestMu AI (Formerly LambdaTest), you can run Ruby Capybara automation tests with Cucumber on a scalable cloud browser grid. This sample shows how to configure Capybara with Selenium to run on the TestMu AI cloud.
 
 - [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly LambdaTest).
-- Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/ruby-with-capybara-running-automation-scripts-on-testmu-selenium-grid/) for the full setup walkthrough.
+- Follow the [Run Capybara tests with Selenium on TestMu AI](https://www.testmuai.com/support/docs/ruby-with-capybara-running-automation-scripts-on-testmu-selenium-grid/) for the full setup walkthrough.
 
 ### Prerequisites
 
